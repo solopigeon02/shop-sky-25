@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { fetchAllCategories } from './utils/api';
 import { useState } from 'react';
+import { Greeting } from './screens/Greeting';
 
 export default function App() {
 
@@ -12,7 +13,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Good day sir, My name is Sam</Text>
+      <Greeting name="Sky Group" tafe="Hornsby"/>
       <StatusBar style="auto" />
     </View>
   );
